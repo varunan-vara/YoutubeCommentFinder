@@ -7,16 +7,24 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Inconsolata:wght@200;400;700&family=PT+Serif&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <div>
-            <div><h1>YouTube Comment Finder</h1></div>
-            <div><h3>Find the top rated comments in any Youtube Video Link.</h3></div>
-        </div><br><br>
-        <div><form class="formarea" action="">
-            <label for="LinkInput">Insert Link Here</label>
-            <input type="text" id="LinkInput" name="LinkInput">
-        </form></div>
-        <div><button><img src="Assets/GitHub-Mark-120px-plus.png"></button></div>
+        <div class="header">
+            <div class="title-box"><h1 class="title"><div id="Youtube">YouTube</div> Top<br>Comment<br>Finder</h1></div>
+        </div>
+        <div class="inputarea">
+            <div class="form__group">
+              <input type="text" class="form__input" id="name" placeholder="URL" required="" />
+            </div>
+            <div class="buttonarea">
+                <button><p>Submit</p></button>
+                <button><p>Random Video</p></button>
+                <button>
+                    <img src="Assets/GitHub-Mark-120px-plus.png">
+                </button>
+            </div>
+        </div>
     </body>
 </html>

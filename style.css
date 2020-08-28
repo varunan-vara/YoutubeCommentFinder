@@ -1,0 +1,133 @@
+body {
+    padding: 0;
+    margin: 0;
+    /*Defining basic Variables*/
+    --youtube-color: #E54B4B;
+    --salmon: #FFA987;
+    --background: #1E1E24;
+    --light: #F7EBE8;
+    /**/
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background);
+    color: var(--light);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--light);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--background);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    position: absolute;
+    left: 10px;
+}
+
+.title {
+    font-size: 72px;
+    align-content: center;
+    align-items: center;
+    /**/
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+#Youtube {
+    font-family: 'PT Serif', serif;
+    background-color: var(--youtube-color);
+    padding: 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.inputarea{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    margin: 20px;
+}
+
+.buttonarea {
+    margin: 30px
+}
+
+.formarea{
+    flex-grow: 1;
+}
+
+.buttonarea {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+button {
+    background-color: var(--background);
+    border: 3px solid var(--light);
+    color: var(--light);
+    margin: 20px;
+}
+
+
+
+/*Code Stolen from Fidalgo: https://codepen.io/fidalgodev/pen/bOGaVy*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 20px;
+  box-sizing: inherit;
+  font-size: 62,5%;
+}
+
+
+
+.form__label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+
+.form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 100%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
